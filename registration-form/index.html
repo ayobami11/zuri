@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="icon" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Learn to code by watching others</h1>
+            <p class="header-text">
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+            </p>
+        </header>
+        <main>
+            <section class="form-section">
+                <header class="form-header">
+                    <p>
+                        <strong>Try it free 7 days</strong> then $20/mo.
+                        thereafter
+                    </p>
+                </header>
+
+                <form method="POST">
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            placeholder="First name"
+                            required
+                        />
+                        <p class="input-prompt">
+                            <small>First name cannot be empty</small>
+                        </p>
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            placeholder="Last name"
+                            required
+                        />
+                        <p class="input-prompt">
+                            <small>Last name cannot be empty</small>
+                        </p>
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email Address"
+                            required
+                        />
+                        <p class="input-prompt">
+                            <small>Looks like this is not an email</small>
+                        </p>
+                    </div>
+                    <div class="input-field">
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password"
+                            required
+                        />
+                        <p class="input-prompt">
+                            <small>Password cannot be empty</small>
+                        </p>
+                    </div>
+
+                    <button type="submit">Claim your free trial</button>
+
+                    <p class="terms-text">
+                        <small>
+                            By clicking the button, you are agreeing to our
+                            <a class="terms-link" href="">Terms and Services</a>
+                        </small>
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer>Coded by <a href="">Ayobami Tunwase</a></footer>
+    </body>
+</html>

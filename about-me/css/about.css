@@ -1,0 +1,58 @@
+main {
+    width: 90%;
+    margin: 1em auto;
+}
+
+main ul {
+    list-style:square;
+}
+
+main ul,
+ol {
+    list-style-position: inside;
+}
+
+figure {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    justify-content: space-between;
+}
+
+img {
+    object-fit: cover;
+    display: block;
+    max-width: 300px;
+    border-radius: 1em;
+}
+
+figcaption {
+    max-width: 700px;
+}
+
+section {
+    margin: 1em 0;
+}
+
+.contact-link {
+    background:rgb(100, 116, 31);
+    color: white;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 1em;
+    display: block;
+    width: fit-content;
+}
+
+.contact-link:hover {
+    filter: brightness(125%);
+}
+
+@media (min-width: 700px) {
+    figure {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ayobami Tunwase" />
+        <title>Ayobami | Contact</title>
+
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/a21dc2a35f.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/contact.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1>Ayobami</h1>
+
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li>
+                        <a class="header-link" href="./about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="header-link active" href="./contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header-link" href="./register.html"
+                            >Register</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2 class="form-title">Contact Us</h2>
+                <form action="POST">
+                    <div class="input-fields">
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="John Doe"
+                                required
+                            />
+                            <label class="form-label" for="name"
+                                >Name
+                                <abbr class="required-asterisk" title="This field is required">*</abbr>
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="johndoe@email.com"
+                                required
+                            />
+                            <label class="form-label" for="email"
+                                >Email
+                                <abbr class="required-asterisk" title="This field is required">*</abbr>
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <textarea
+                                class="form-input"
+                                name="message"
+                                id="message"
+                                placeholder="Type something here..."
+                                rows="5"
+                            ></textarea>
+                            <label class="form-label" for="message"
+                                >Message
+                                <abbr class="required-asterisk" title="This field is required"
+                                    >*</abbr
+                                ></label
+                            >
+                        </div>
+                    </div>
+
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>Feel free to reach out to me on:</p>
+                <a
+                    href="https://github.com/ayobami11"
+                    target="_blank"
+                    title="Github"
+                    ><i class="fab fa-github"></i
+                ></a>
+                <a
+                    href="https://twitter.com/TunwaseAyobami"
+                    target="_blank"
+                    title="Twitter"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/mwlite/in/ayobami-tunwase-83a21b202" target="_blank" title="Linkedin"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+            </address>
+            <p>&copy; 2022 Ayobami Tunwase.</p>
+        </footer>
+    </body>
+</html>

@@ -1,2 +1,2 @@
-# zuri
-For I4G x Zuri tasks
+# I4GxZuri Internship
+Contains I4G x Zuri tasks

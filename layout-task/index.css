@@ -1,0 +1,145 @@
+:root {
+    /* Colors */
+    
+    /* Primary */
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+     /* Neutral */
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+    --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+
+    /* Typography */
+    --font-size: 15px;
+
+    /* Font weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+abbr {
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--dark-cyan);
+}
+
+.nav-link:hover {
+    color: var(--very-dark-cyan);
+}
+
+.cards {
+    border-radius: .5em;
+    overflow: hidden;
+    margin: 1em 0;
+    max-width: 900px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 275px;
+    max-width: 300px;
+    
+    padding: calc(1em + 1.5625vw);
+    gap: 2em;
+
+    /* to ensure the button for each column are always at the same level */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-title {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: var(--font-weight-bold);
+    font-size: 2.25rem;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.sedans {
+    background: var(--bright-orange);
+}
+
+.suvs {
+    background: var(--dark-cyan);
+}
+
+.luxury {
+    background: var(--very-dark-cyan);
+}
+
+.card-text {
+    color: var(--transparent-white);
+    line-height: 1.5;
+}
+
+.learn-button {
+    background: var(--very-light-gray);
+    border: none;
+    display: block;
+    text-transform: capitalize;
+    outline: none;
+    
+    margin: 3em 0 1em;
+    padding: .75em 1.5em;
+    border-radius: 1.5em;
+    font-weight: var(--font-weight-bold);
+
+    transition: all 150ms ease-in-out;
+}
+
+.sedans .learn-button {
+    color: var(--bright-orange);
+}
+
+.suvs .learn-button {
+    color: var(--dark-cyan);
+}
+
+.luxury .learn-button {
+    color: var(--very-dark-cyan);
+}
+
+.learn-button:hover {
+    background: transparent;
+    border: 2px solid currentColor;
+    color: var(--very-light-gray);
+    cursor: pointer;
+}

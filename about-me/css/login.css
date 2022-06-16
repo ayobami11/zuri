@@ -1,0 +1,15 @@
+main {
+    background: rgb(188, 231, 189);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-section {
+    background: rgb(255, 255, 255);
+    margin-top: 5em;
+
+    padding: 1.5em;
+    border-radius: .5em;
+}

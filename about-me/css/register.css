@@ -1,0 +1,36 @@
+main {
+    background: rgb(188, 231, 189);
+}
+
+strong {
+    color: rgb(186, 45, 45);
+}
+
+.form-section {
+    background: rgb(255, 255, 255);
+    margin-top: 3em;
+
+    max-width: 700px;
+}
+
+.input-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 1em;
+}
+
+.input-field {
+    grid-column: span 2;
+}
+
+@media (min-width: 600px) {
+    .input-field:nth-child(1),
+    .input-field:nth-child(2), 
+    .input-field:nth-child(5), 
+    .input-field:nth-child(6),
+    .input-field:nth-child(8),
+    .input-field:nth-child(9) {
+        grid-column: span 1;
+    }
+}
+

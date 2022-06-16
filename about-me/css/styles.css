@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: rgb(100, 116, 31);
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    background: rgb(100, 116, 31);
+    color: white;
+    padding: 1em 0;
+
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+    margin: 1em;
+}
+
+footer a:hover {
+    color: rgb(255, 181, 135);
+}
+
+footer i {
+    font-size: 1.25rem;
+}
+
+.header {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* border-bottom: 1px solid rgb(83, 78, 78); */
+    box-shadow: 4px 4px 20px rgb(175, 175, 175);
+    
+    padding: 0 5%;
+    
+}
+
+.header-nav {
+    width: 100%;
+    overflow: scroll;
+    max-width: 500px;
+}
+
+.header-list {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    
+    /* max-width: 700px; */
+}
+
+.header-link {
+    color: rgb(48, 48, 48);
+    white-space: nowrap;
+    display: inline-block;
+    padding: 1.5em 1em;
+
+}
+
+.header-link:hover {
+    color: rgb(177, 101, 35);
+}
+
+.active {
+    color: rgb(177, 101, 35);
+    font-weight: bold;
+    border-bottom: 3px solid currentColor;
+}
+
+.form-section {
+    margin: 1em auto;
+    width: 90%;
+    max-width: 500px;
+
+    background: rgb(255, 255, 255);
+    padding: 1.5em;
+    border-radius: .5em;
+}
+
+.form-title {
+    color: hsl(36, 35%, 30%);
+    margin: 1em 0;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5em;
+
+    margin: 0.75em 0;
+}
+
+.form-label {
+    color: rgb(90, 64, 27);
+}
+
+.form-input {
+    padding: 0.5em;
+    border: 2px solid rgb(90, 64, 27);
+    
+    border-radius: 0.25em;
+    
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: hsl(226, 72%, 46%);
+}
+
+.form-input:focus + .form-label {
+    color: hsl(226, 72%, 46%);
+}
+
+.submit-button {
+    background: hsl(36, 35%, 30%);
+    /* background: rgb(156, 142, 121); */
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    padding: .75em 1.5em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    filter: brightness(125%);
+}
+
+.required-asterisk {
+    color: red;
+}

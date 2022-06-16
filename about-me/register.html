@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ayobami Tunwase" />
+        <title>Ayobami | Register</title>
+
+        <!-- Fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/a21dc2a35f.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/register.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1>Ayobami</h1>
+
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li>
+                        <a class="header-link" href="./about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="header-link active" href="./register.html"
+                            >Register</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2 class="form-title">Register</h2>
+
+                <p>
+                    <strong>All fields are required.</strong>
+                </p>
+                <form method="POST">
+                    <div class="input-fields">
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="text"
+                                name="first-name"
+                                id="first-name"
+                                placeholder="John"
+                                required
+                            />
+                            <label class="form-label" for="first-name"
+                                >First name</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                placeholder="Doe"
+                                required
+                            />
+                            <label class="form-label" for="last-name"
+                                >Last name</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                pattern="[0-9]{11}"
+                                placeholder="08012345678"
+                                required
+                            />
+                            <label class="form-label" for="phone">Phone</label>
+                        </div>
+                        <div class="input-field">
+                            <select
+                                class="form-input"
+                                name="gender"
+                                id="gender"
+                                required
+                            >
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="undisclosed">
+                                    Prefer not to say
+                                </option>
+                            </select>
+                            <label class="form-label" for="gender"
+                                >Gender</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="text"
+                                name="country"
+                                id="country"
+                                required
+                            />
+                            <label class="form-label" for="country"
+                                >Country</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="text"
+                                name="state"
+                                id="state"
+                                required
+                            />
+                            <label class="form-label" for="state"
+                                >State / Province</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="johndoe@email.com"
+                                required
+                            />
+                            <label class="form-label" for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="password"
+                                name="password"
+                                id="password"
+                                minlength="8"
+                                required
+                            />
+                            <label class="form-label" for="password"
+                                >Password</label
+                            >
+                        </div>
+                        <div class="input-field">
+                            <input
+                                class="form-input"
+                                type="password"
+                                name="confirm-password"
+                                id="confirm-password"
+                                minlength="8"
+                                required
+                            />
+                            <label class="form-label" for="confirm-password"
+                                >Confirm password</label
+                            >
+                        </div>
+                    </div>
+                    <button class="submit-button" type="submit">
+                        Register
+                    </button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>Feel free to reach out to me on:</p>
+                <a
+                    href="https://github.com/ayobami11"
+                    target="_blank"
+                    title="Github"
+                    ><i class="fab fa-github"></i
+                ></a>
+                <a
+                    href="https://twitter.com/TunwaseAyobami"
+                    target="_blank"
+                    title="Twitter"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/mwlite/in/ayobami-tunwase-83a21b202" target="_blank" title="Linkedin"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+            </address>
+            <p>&copy; 2022 Ayobami Tunwase.</p>
+        </footer>
+    </body>
+</html>
