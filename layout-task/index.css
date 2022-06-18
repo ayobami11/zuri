@@ -142,3 +142,10 @@ a {
     color: var(--very-light-gray);
     cursor: pointer;
 }
+
+@media (min-width: 610px) and (max-width: 920px) {
+    .card {
+        /* prevents the last flex item from stretching across 2 columns (almost like grid's auto-fill) */
+        max-width: 50%;
+    }
+}
