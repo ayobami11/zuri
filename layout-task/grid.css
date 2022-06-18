@@ -27,11 +27,9 @@ a:hover {
     grid-template-rows: repeat(12, 1fr);
     gap: calc(.5em + .35vw);
 
-    width: 100%;
+    width: clamp(200px, 100%, 900px);
     height: 100%;
-
-    min-width: 200px;
-    max-width: 900px;
+    max-height: 700px;
 
 }
 
